@@ -14,7 +14,6 @@ public class Chapter15_2 {
         // PathクラスのインスタンスをFileSystem.getPathメソッドで生成
         Path inputPath = fs.getPath("resouces/input.txt");
         Path outputPath = fs.getPath("resouces/output.txt");
-
         // Java7以降に追加された「try-with-resources」文で処理
         // Filesクラスを使用して、BufferedReaderクラスのインスタンスを生成
         // Filesクラスを使用して、BufferedWriterクラスのインスタンスを生成

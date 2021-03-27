@@ -3,6 +3,7 @@ package practice;
 public class ThreadSample implements Runnable {
     int num;
 
+
     // コンストラクタ
     public ThreadSample(int num) {
         this.num = num;

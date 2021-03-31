@@ -5,28 +5,21 @@ public class Chapter08 {
 		while (number < 5) {
 			System.out.println("While = " + number * number);
 			number++;
+			//			変数「num」を「while」文のブロック内でインクリメントしながら、「while」文の条件「num < 5」までループ処理を行う。
 		}
 		int array[] = { 1, 14, 35, 68 };
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i]);
+			//			配列の変数「array」を初期化。
+			//			変数「i」を0で初期化してインクリメントしながら、変数「array」のサイズ分（array.length）、ループ処理を行う。
 		}
 		for (int val : array) {
 			if (val % 2 == 0) {
 				continue;
 			}
 			System.out.println(val);
+			//			変数「array」の要素分ループ処理を行い、取得した要素「val」が偶数の場合は、「continue」で処理をスキップして、奇数の場合のみ出力。
+			//			今回のように奇数の場合の処理が少ない場合は、if文を使用しても大きな違いはないが、処理が多くなると「continue」を使用した方がプログラムが分かりやすくなる。
 		}
 	}
-
 }
-
-//Chapter08.java」に以下のプログラムを作成してください。
-//1.「while」文
-//・1以上5未満の数の2乗を出力
-//2. 通常「for」文
-//・要素数が4の「int」配列を初期化
-//・配列のサイズ分ループして、要素を出力
-//　※ 配列のサイズは「変数名.length」で取得が可能
-//3. 拡張「for」文
-//・「2.」の配列をループ
-//・要素の値が偶数の場合は、continue文で処理をスキップ、奇数の場合は出力

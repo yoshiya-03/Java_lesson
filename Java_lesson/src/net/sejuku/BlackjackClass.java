@@ -65,6 +65,7 @@ public class BlackjackClass {
 
          //ディーラーが手札を17以上にするまでカードを引くフェーズ
 
+
          //ポイントを比較する
          System.out.println("あなたのポイントは" + playerPoint);
          System.out.println("ディーラーのポイントは"+ dealerPoint);
@@ -102,12 +103,20 @@ public class BlackjackClass {
 
      //現在の合計ポイントを計算するメソッド
      private static int sumPoint(List<Integer> list) {
+    	 int sum = 0;
 
+    	 for(int i =0;i < list.size();i++) {
+    		 sum = sum + toPoint(toNumber(list.get(i)));
+    	 }
+    	 return sum;
      }
 
      //山札の通し番号を得点計算用のポイントに変換するメソッド.J/Q/Kは10とする
      private static int toPoint(int num) {
-
+    	 if(num == 11||num == 12||num == 13) {
+    		 num = 10;
+    	 }
+    	 return num;
      }
 
 

@@ -23,6 +23,5 @@ public class Algorithm01 {
 			//output変数にFizzとBuzzを代入
 			System.out.println(output);
 		}
-
 	}
 }

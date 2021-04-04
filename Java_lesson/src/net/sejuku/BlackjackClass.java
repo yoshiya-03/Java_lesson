@@ -62,6 +62,13 @@ public class BlackjackClass {
 
 
          //プレイヤーがカードを引くフェーズ
+         while(true) {
+        	 System.out.println("カードを引きますか？Yes:y or No:n");
+        	//キーボードの入力を受け付けて、変数strに代入する
+        	 if("n".equals(str)) {
+
+        	 }
+         }
 
          //ディーラーが手札を17以上にするまでカードを引くフェーズ
 
@@ -102,14 +109,15 @@ public class BlackjackClass {
     }
 
      //現在の合計ポイントを計算するメソッド
-     private static int sumPoint(List<Integer> list) {
-    	 int sum = 0;
+		private static int sumPoint(List<Integer> list) {
+			int sum = 0;
 
-    	 for(int i =0;i < list.size();i++) {
-    		 sum = sum + toPoint(toNumber(list.get(i)));
-    	 }
-    	 return sum;
-     }
+			for (int i = 0; i < list.size(); i++) {
+				sum = sum + toPoint(toNumber(list.get(i)));
+			}
+
+			return sum;
+		}
 
      //山札の通し番号を得点計算用のポイントに変換するメソッド.J/Q/Kは10とする
      private static int toPoint(int num) {

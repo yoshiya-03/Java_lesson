@@ -9,21 +9,21 @@ public class BmiCalc2 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		double weight,height,bmi;
-		
+
 //		weight = 56;
 //		height = 178;
-		
+
 		Scanner stdIn = new Scanner(System.in);
 		System.out.println("体重は?(kg) : ");
 		weight = stdIn.nextDouble();
-		
+
 		System.out.println("身長は?(cm) : ");
 		height = stdIn.nextDouble();
 		height /= 100;
-		
+
 		bmi = weight / (height * height);
-		
-		System.out.println("BMI: " + bmi + " です。");
+
+		System.out.println("BMI: " + bmi + " です");
 	}
 
 }

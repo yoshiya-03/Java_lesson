@@ -1,4 +1,5 @@
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class HowOldAreYou {
@@ -13,9 +14,9 @@ public class HowOldAreYou {
 				line = reader.readLine();
 				int age = Integer.parseInt(line);
 				System.out.println("いま、" + age + "歳とすると、10年後は" + (age + 10) + "歳ですね。");
-			} catch (IOExcepition e) {
+			} catch (IOException e) {
 				System.out.println(e);
-			} catch (NumberFormatExcepition e) {
+			} catch (NumberFormatException e) {
 					System.out.println("年齢が正しくありません。");
 				}
 	   }

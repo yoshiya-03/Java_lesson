@@ -17,7 +17,7 @@ public class HowOldAreYou {
 			} catch (IOException e) {
 				System.out.println(e);
 			} catch (NumberFormatException e) {
-					System.out.println("年齢が正しくありません。");
+					Systeprintln("年齢が正しくありません。");
 				}
 	   }
 	}
